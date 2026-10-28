@@ -37,8 +37,7 @@ export default function App() {
         <main id="main">
         <section className="work-section section-wrap" id="work" aria-labelledby="work-title">
           <div className="section-heading">
-            <div><p className="eyebrow">01 / Things I’ve made</p><h2 id="work-title">Selected <em>work</em></h2></div>
-            <p className="section-heading__aside">A little engineering, a little curiosity,<br />and a closer look at how things work.</p>
+            <div><p className="eyebrow">Things I’ve made</p><h2 id="work-title">Seam <em>Carving</em></h2></div>
           </div>
           <ProjectCard project={seamCarvingProject} />
           <p className="after-card-note"><span aria-hidden="true">✳</span> One project at a time. More good questions in progress.</p>
@@ -46,7 +45,7 @@ export default function App() {
 
         <section className="about-section" id="about" aria-labelledby="about-title">
           <div className="about-inner section-wrap">
-            <div className="about-heading"><p className="eyebrow">02 / Outside the circuit</p><h2 id="about-title">A little <em>about</em> me</h2></div>
+            <div className="about-heading"><p className="eyebrow">Outside the circuit</p><h2 id="about-title">A little <em>about</em> me</h2></div>
             <div className="about-composition">
               <figure className="about-image">
                 <img src="/images/ocean-hero.jpg" alt="Black and white ocean foam breaking across dark water" />
@@ -66,7 +65,7 @@ export default function App() {
         </section>
 
         <section className="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
-          <div className="contact-topline"><span>03 / Keep in touch</span><span>Toronto, Canada · always happy to meet a good question</span></div>
+          <div className="contact-topline"><span>Keep in touch</span><span>Toronto, Canada · always happy to meet a good question</span></div>
           <div className="contact-content">
             <div><p className="eyebrow">A note, a question, a new idea</p><h2 id="contact-title">Have a good<br /><em>question?</em></h2></div>
             <div className="contact-copy"><p>If you’re curious about the work, have something interesting to share, or want to talk engineering, come say hi.</p><a className="button button--cream" href="https://github.com/notyourjess555" target="_blank" rel="noreferrer">Find me on GitHub <ArrowMark /></a></div>
