@@ -16,7 +16,11 @@ export default function App() {
       <MagicWandCursor />
       <div className="site-shell">
         <section className="hero" id="home" aria-labelledby="hero-title">
-          <div className="hero__photo" aria-hidden="true" />
+          <div
+            className="hero__photo"
+            aria-hidden="true"
+            style={{ backgroundImage: `url("${import.meta.env.BASE_URL}images/ocean-hero.jpg")` }}
+          />
           <div className="hero__shade" aria-hidden="true" />
           <SiteNav />
           <div className="hero__main">
@@ -46,7 +50,7 @@ export default function App() {
               <div className="about-heading"><h2 id="about-title">About Me</h2></div>
               <div className="about-composition">
                 <figure className="about-image">
-                  <img src="/images/jess-portrait.png" alt="Jess Chan" />
+                  <img src={`${import.meta.env.BASE_URL}images/jess-portrait.png`} alt="Jess Chan" />
                 </figure>
                 <article className="about-paper" id="cute-things">
                   <p className="paper-label">A small introduction of</p>
