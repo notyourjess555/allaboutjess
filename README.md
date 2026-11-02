@@ -1,6 +1,7 @@
 # Jess Chan — Personal Portfolio
 
 A personal portfolio showcasing my projects, interests, and experiments as a 2nd year Computer Engineering student.
+More on https://notyourjess555.github.io/allaboutjess/
 
 
 ## ✦ About the Project
