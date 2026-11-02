@@ -2,7 +2,3 @@ node_modules
 dist
 .DS_Store
 *.local
-__pycache__/
-*.py[cod]
-seam-carving-app/.venv/
-seam-carving-app/.build/
