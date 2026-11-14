@@ -7,7 +7,6 @@ const links = [
 export default function SiteNav() {
   return (
     <header className="site-header">
-      <a className="wordmark" href="#home" aria-label="Jess Chan, home">JC<span aria-hidden="true">✳</span></a>
       <nav className="site-nav" aria-label="Main navigation">
         {links.map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}
       </nav>

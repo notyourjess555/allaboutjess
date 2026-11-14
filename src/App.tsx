@@ -1,7 +1,12 @@
+import { lazy, Suspense } from 'react'
 import MagicWandCursor from './components/MagicWandCursor'
+import DecryptedText from './components/DecryptedText'
+import PixelSnow from './components/PixelSnow'
 import ProjectCard from './components/ProjectCard'
 import SiteNav from './components/SiteNav'
 import { seamCarvingProject } from './data/projects'
+
+const Lanyard = lazy(() => import('./components/Lanyard'))
 
 function ArrowMark() {
   return <span className="arrow-mark" aria-hidden="true">↗</span>
@@ -16,23 +21,88 @@ export default function App() {
       <MagicWandCursor />
       <div className="site-shell">
         <section className="hero" id="home" aria-labelledby="hero-title">
-          <div
-            className="hero__photo"
-            aria-hidden="true"
-            style={{ backgroundImage: `url("${import.meta.env.BASE_URL}images/ocean-hero.jpg")` }}
-          />
+          <div className="hero__snow" aria-hidden="true">
+            <PixelSnow
+              className="hero__snow-effect"
+              color="#D6EFFF"
+              variant="snowflake"
+              density={0.42}
+              speed={0.48}
+              wind={0.025}
+              sway={0.22}
+              flakeSize={0.62}
+              pixelSize={2}
+              depth={0.72}
+              brightness={1.35}
+              glow={0.78}
+              twinkle={0.34}
+              mouseInteraction
+              intro
+              fade={0.12}
+              opacity={0.92}
+            />
+          </div>
           <div className="hero__shade" aria-hidden="true" />
           <SiteNav />
           <div className="hero__main">
-            <h1 id="hero-title" className="hero-title">Hi, I'm Jess Chan and</h1>
-            <p className="hero__tagline">I have a question. And probably a project.</p>
-            <div className="hero__intro">
-              <p>UofT Computer Eng 2T9.</p>
-            </div>
+            <h1 id="hero-title" className="hero-title">
+              <DecryptedText
+                text="Hi, I'm JESS CHAN"
+                parentClassName="hero-title__text"
+                className="hero-title__glyph"
+                encryptedClassName="hero-title__glyph hero-title__glyph--encrypted"
+                animateOn="view"
+                effect="scramble"
+                sequential
+                revealDirection="start"
+                speed={42}
+                maxIterations={9}
+                scrambleColor="#94b8cc"
+              />
+            </h1>
+            <DecryptedText
+              text="I have a question. And probably a project."
+              parentClassName="hero__tagline"
+              className="hero__tagline-glyph"
+              encryptedClassName="hero__tagline-glyph hero__tagline-glyph--encrypted"
+              animateOn="view"
+              effect="scramble"
+              sequential
+              revealDirection="start"
+              speed={36}
+              maxIterations={9}
+              scrambleColor="#94b8cc"
+            />
             <div className="hero-actions">
-              <a className="button button--ice" href="#work">See my projects <ArrowMark /></a>
-              <a className="hero__text-link" href="#about">A little about me <span aria-hidden="true">↓</span></a>
+              <a className="button button--ice" href="#work">See my projects</a>
+              <a className="hero__text-link" href="#about">A little about me</a>
             </div>
+          </div>
+          <div className="hero-lanyard" role="group" aria-label="Interactive portrait lanyard: drag to move, click to flip">
+            <Suspense fallback={null}>
+              <Lanyard
+                className="hero-lanyard__scene"
+                frontImage={`${import.meta.env.BASE_URL}images/jess-portrait.png`}
+                backImage=""
+                imageFit="cover"
+                cardColor="#D6EFFF"
+                orientation="portrait"
+                finish="matte"
+                cornerRadius={0.16}
+                size={0.42}
+                anchor="right"
+                strapLength={1}
+                strapColor="#D6EFFF"
+                strapWidth={0.72}
+                metal="silver"
+                gravity={0.82}
+                damping={0.68}
+                elasticity={0.4}
+                breeze={0.18}
+                interactive
+                intro
+              />
+            </Suspense>
           </div>
         </section>
 
