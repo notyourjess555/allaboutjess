@@ -4,13 +4,13 @@ A personal portfolio showcasing my projects, interests, and experiments as a 2nd
 More on https://notyourjess555.github.io/allaboutjess/
 
 
-## About the Project
+## ✦ About the Project
 
 I enjoy exploring ideas, figuring out how things work, and turning concepts into something tangible. This website is a space to share what I build, what I learn, and what I'm curious about.
 This portfolio was built to bring my work and personality together in one place. The design combines a dark, ocean-inspired visual style with interactive elements, including a pixel-snow hero and a draggable portrait lanyard.
 Rather than being just a website, I wanted the website itself to feel like something I made: a little unconventional, creative, and still focused on the work.
 
-## ✦ Features ✦
+## ✦ Features
 
 - **Hero section** — An immersive pixel-snow introduction with an animated headline and interactive portrait lanyard.
 - **Project showcase** — Highlights my project.
@@ -19,7 +19,7 @@ Rather than being just a website, I wanted the website itself to feel like somet
 - **Interactive details** — Includes a custom magic-wand cursor and subtle animations.
 - **Responsive layout** — Designed to work across different screen sizes.
 
-## Built With
+## ✦ Built With
 
 - React
 - TypeScript
@@ -28,7 +28,7 @@ Rather than being just a website, I wanted the website itself to feel like somet
 - Three.js — 3D lanyard rendering
 - Google Fonts — Anton, Fredoka, JetBrains Mono, Libre Bodoni, and Sedgwick Ave Display
 
-## Getting Started
+## ✦ Getting Started
 
 ### Prerequisites
 
@@ -69,7 +69,7 @@ To preview the production build locally:
 pnpm preview
 ```
 
-## ✦ Project Structure ✦
+## ✦ Project Structure
 
 The project follows a typical React + Vite structure. Key files include:
 
@@ -95,7 +95,7 @@ The project follows a typical React + Vite structure. Key files include:
 
 These steps only change your local files. To send a commit to GitHub, run `git push` yourself or ask for it explicitly; publishing a GitHub Pages update is a separate deployment step.
 
-## ✦ Featured Project ✦
+## ✦ Featured Project
 
 ### Seam Carving — Content-Aware Image Resizing
 

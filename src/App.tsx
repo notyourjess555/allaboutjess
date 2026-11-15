@@ -82,7 +82,7 @@ export default function App() {
             <Suspense fallback={null}>
               <Lanyard
                 className="hero-lanyard__scene"
-                frontImage={`${import.meta.env.BASE_URL}images/jess-portrait.png`}
+                frontImage={`${import.meta.env.BASE_URL}images/jess-portrait-dithered.jpg`}
                 backImage=""
                 imageFit="cover"
                 cardColor="#D6EFFF"
@@ -112,17 +112,18 @@ export default function App() {
               <div><p className="eyebrow">Things I’ve made</p><h2 id="work-title">Seam <em>Carving</em></h2></div>
             </div>
             <ProjectCard project={seamCarvingProject} />
-            <p className="after-card-note">more project in progress...</p>
+            <p className="after-card-note">
+              <a href="https://github.com/notyourjess555" target="_blank" rel="noreferrer">
+                more project in progress...
+              </a>
+            </p>
           </section>
 
           <section className="about-section" id="about" aria-labelledby="about-title">
             <div className="about-inner section-wrap">
               <div className="about-heading"><h2 id="about-title">About Me</h2></div>
-              <div className="about-composition">
-                <figure className="about-image">
-                  <img src={`${import.meta.env.BASE_URL}images/jess-portrait.png`} alt="Jess Chan" />
-                </figure>
-                <article className="about-paper" id="cute-things">
+              <article className="about-paper about-paper--combined" id="cute-things">
+                <div className="about-paper__copy">
                   <p className="paper-label">A small introduction of</p>
                   <h3>My Curiosity.</h3>
                   <p>I'm a Computer Engineering student at the University of Toronto. I’m drawn to the moment when something I don't understand becomes something I can explain and, eventually, build. I like the space between having an idea and figuring out how to make it real.</p>
@@ -130,8 +131,11 @@ export default function App() {
                   <p>I'm interested in software, data, and AI, but what draws me to them is the range of things you can do with them and the process of figuring out how.</p>
                   <p>I want to keep building, keep asking questions, and get better at turning things I wonder about into things that work.</p>
                   <span className="paper-stamp" aria-hidden="true">J.C.</span>
-                </article>
-              </div>
+                </div>
+                <figure className="about-image">
+                  <img src={`${import.meta.env.BASE_URL}images/jess-portrait.png`} alt="Jess Chan" />
+                </figure>
+              </article>
             </div>
           </section>
 
@@ -152,7 +156,6 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <span className="contact-scribble" aria-hidden="true">say hi!</span>
           </section>
         </main>
 
